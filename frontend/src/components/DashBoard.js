@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ErrorToast, SuccessToast } from "./Popup";
 
 const Dashboard = () => {
-  const url = "http://localhost:4500";
+  const url = "https://note-taking-backend-qa15.onrender.com";
   const [Note, setNote] = useState([
   
   ]);
@@ -13,7 +13,6 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem("noteToken");
   useEffect(() => {
-    // Fetch Note from API
 
     if (!token) {
       ErrorToast("You Are not Authorised User Go for Login");
@@ -104,9 +103,9 @@ const Dashboard = () => {
           <div className="flex items-center mx-auto justify-center h-64 bg-gray-100 rounded-lg shadow-md p-6">
             <p className="text-lg font-semibold text-gray-700">
               No Notes available. Please{" "}
-              <a href="/note-creates" className="text-blue-500 underline">
+              <p onClick={()=>navigate("/note-creates")} className="text-blue-500 underline cursor-pointer">
                 create one
-              </a>
+              </p>
               .
             </p>
           </div>

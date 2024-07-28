@@ -6,7 +6,7 @@ import NotesForm from "./NoteForm";
 import NotePreview from "./NotePreview";
 
 const NoteCreater = () => {
-  const url = "http://localhost:4500";
+  const url = "https://note-taking-backend-qa15.onrender.com";
   const { id } = useParams();
   const [NoteInfo, setNoteInfo] = useState({});
   const [flag, setFlag] = useState(false);
@@ -91,7 +91,7 @@ const NoteCreater = () => {
   return (
     <div className="w-full max-w-4xl mt-10 mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
       <h1 className="text-4xl font-extrabold mb-8 text-center text-gray-900">
-        Create Notes
+      {id? "Edit Notes":"Create Notes"  }
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="w-full">

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ErrorToast, SuccessToast } from "./Popup";
 
 const Register = () => {
-      const url="http://localhost:4500"
+      const url="https://note-taking-backend-qa15.onrender.com"
   const [formData, setFormData] = useState({
     email: "",
     username: "",
