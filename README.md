@@ -4,7 +4,7 @@ This project is a daily note-taking application built with Node.js and React.js,
 
 ## Deployed Frontend URL
 
-- **URL**: 'note-taking-frontend.vercel.app/'
+- **URL**: [note-taking-frontend.vercel.app/](https://note-taking-frontend.vercel.app/)
 
 ## Features
 - **User Dashboard**: View, create, edit, and delete notes.
